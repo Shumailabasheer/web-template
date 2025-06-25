@@ -1,0 +1,59 @@
+.custom-btn {
+  background-color:black;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.custom-btn:hover{
+background-color:rgb(25, 25, 25);
+color: white;
+}
+.brands {
+  /* margin-top: 10px; */
+  text-align: center;
+}
+
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.brand-logos img{
+  font-size: 1rem;
+  opacity: 0.7;
+
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .text-section {
+    flex: 1;
+  }
+
+  .image-section {
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
+.sec-2{
+  display:flex;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.sec-2 span{
+margin-top: 10px;
+margin-left: 10px;
+}
