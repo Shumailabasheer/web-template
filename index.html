@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome -->
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <!--  -->
     <!--css bootstrap link -->
     <link rel="stylesheet" href="./bootstrap.min.css">
@@ -82,18 +81,237 @@
 
 
 <!-- card sect -->
- <div class="container mt-5 border-secondary">
-  <div class="row ">
-    <div class="col-md-4 col-sm-6 mb-4">
-      <div class="card-body">
-          <h5 class="card-title">Sierra Web Development • Owner</h5>
-          <p class="card-text">This is a company that builds websites,<br> web apps and e-commerce solutions.</p>
-        </div>
-      <div class="card  " style="width: 100px;">
-        <img src="images/img-2.png" class="card-img-top" alt="Photo">
-        
+
+  <style>
+    .neon-card {
+      background-color: #ccff00;
+      border-radius: 20px;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .outlined-card {
+      border: 2px solid #000;
+      border-radius: 20px;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .neon-title {
+      background-color: #ccff00;
+      padding: 4px 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .btn-learn {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .btn-learn i {
+      margin-right: 6px;
+    }
+
+    .service-image {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .accordion-button {
+      background-color: #ccff00;
+      border-radius: 20px;
+    }
+
+    .accordion-body {
+      background-color: #ccff00;
+      border-radius: 0 0 20px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+  <!-- Cards Section with Images -->
+  <div class="row mb-5">
+    <div class="col-md-6 mb-4">
+      <div class="outlined-card text-center">
+        <img src="images/img-2.png" alt="SEO" class="service-image">
+        <h5><span class="neon-title">Search engine optimization</span></h5>
+        <p class="mt-2"><a href="#" class="btn-learn"><i class="fas fa-arrow-right"></i> Learn more</a></p>
       </div>
     </div>
+    <div class="col-md-6 mb-4">
+      <div class="neon-card text-center">
+        <img src="images/image-2.png" alt="PPC" class="service-image">
+        <h5><span class="bg-white px-2 py-1">Pay-per-click advertising</span></h5>
+        <p class="mt-2"><a href="#" class="btn-learn"><i class="fas fa-arrow-right"></i> Learn more</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Heading -->
+  <div class="mb-4">
+    <h4><span class="neon-title">Our Working Process</span></h4>
+    <p class="text-muted">Step-by-step guide to achieving your business goals</p>
+  </div>
+
+  <!-- Accordion Section -->
+  <div class="accordion" id="processAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <strong>01 Consultation</strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#processAccordion">
+        <div class="accordion-body">
+          During the initial consultation, we will discuss your business goals and objectives, target audience,
+          and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  -->
+  <div class="accordion" id="processAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <strong>02 Consultation</strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#processAccordion">
+        <div class="accordion-body">
+          During the initial consultation, we will discuss your business goals and objectives, target audience,
+          and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  -->
+
+<div class="accordion" id="processAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <strong>03 Consultation</strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#processAccordion">
+        <div class="accordion-body">
+          During the initial consultation, we will discuss your business goals and objectives, target audience,
+          and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class="accordion" id="processAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <strong>04 Consultation</strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#processAccordion">
+        <div class="accordion-body">
+          During the initial consultation, we will discuss your business goals and objectives, target audience,
+          and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+<div class="accordion" id="processAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          <strong>06Consultation</strong>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#processAccordion">
+        <div class="accordion-body">
+          During the initial consultation, we will discuss your business goals and objectives, target audience,
+          and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- footer -->
+ <footer class="footer mt-5 py-4 text-white" style="background-color: #000;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Company Info -->
+      <div class="col-md-4 mb-3 mb-md-0">
+
+        <h5 style="color: #ccff00;">Positivus</h5>
+        <p class="text-white-50">Delivering marketing success with SEO & PPC expertise.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h6 class="text-uppercase" style="color: #ccff00;">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Use Cases</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Pricing</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-md-4 text-md-end text-center">
+        <h6 style="color: #ccff00;">Follow Us</h6>
+        <a href="#" class="text-white fs-5 me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white fs-5 me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+    </div>
+
+    <hr class="my-4 text-white-50">
+
+    <div class="text-center text-white-50">
+      &copy; 2025 Your Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+       
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
 <br><br><br><br><br><br><br><br><br><br>
   
  </body>
